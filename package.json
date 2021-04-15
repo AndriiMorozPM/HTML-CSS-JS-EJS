@@ -12,6 +12,9 @@
   },
   "author": "Andrii Moroz",
   "license": "MIT",
+  "devDependencies": {
+      "custom_module": "file:custom_module"
+  },
   "bugs": {
     "url": "https://github.com/AndriiMorozPM/lab1/issues"
   },
