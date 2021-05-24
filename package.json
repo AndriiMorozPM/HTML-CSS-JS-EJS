@@ -13,10 +13,11 @@
   "author": "Andrii Moroz",
   "license": "MIT",
   "devDependencies": {
-    "custom_module": "file:custom_module"
+    "custom_module": "file:custom_module",
     "bootstrap": "^5.0.0-beta3",
     "ejs": "^3.1.6",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "path": "^0.12.7"
   },
   "bugs": {
     "url": "https://github.com/AndriiMorozPM/lab1/issues"

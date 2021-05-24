@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html lang="uk">
+<%- include('../blocks/head.ejs'); %>
+    <body>
+        <div class="container-fluid">
+            <div class="row flex-nowrap">
+                <%- include('../blocks/navbar_sidebar.ejs'); %>
+                <div class="col py-3 bg-light">
+                    <h1 class="text-center my-4">Error 404</h1>
+                    <h3 class="text-center">Не вдалося знайти дану сторінку:</h3>
+                    <h3 class="text-center"><%=path%></h3>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
