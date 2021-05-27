@@ -1,0 +1,54 @@
+<div class="modal fade" id="modal_projects" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+
+      <div class="modal-header border-secondary">
+        <div class="d-flex flex-column">
+          <span class="fs-3 lh-1" id="project_title">#Title</span>
+        </div>
+        <button type="button" class="btn-close bg-primary" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+
+          <span class="fs-5">Назва проекту</span>
+          <input class="form-control fs-5 bg-dark text-light border-primary mb-2" id="project_name" type="text"
+            placeholder="Назва">
+
+          <div class="row gx-3 mb-2">
+            <div class="col-12 mb-2 d-block d-sm-none"></div>
+            <div class="col-12 col-sm-10">
+
+              <span class="fs-5">Виконавець</span>
+              <div class="dropdown">
+                <button class="btn btn-outline-primary fs-5 w-100 dropdown-toggle" type="button" id="project_executor"
+                  data-bs-toggle="dropdown" aria-expanded="false">Виберіть виконавця</button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="project_executor" id="project_executor_list">
+                  <li><span class="dropdown-item" onclick="set_executor(this)">. . .</span></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <span class="fs-5">Замовник</span>
+          <div class="dropdown">
+            <button class="btn btn-outline-primary fs-5 w-100 dropdown-toggle" type="button" id="project_customer"
+              data-bs-toggle="dropdown" aria-expanded="false">Виберіть замовника</button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="project_customer" id="project_customer_list">
+              <li><span class="dropdown-item" onclick="set_customer(this)">. . .</span></li>
+            </ul>
+          </div>
+
+        </form>
+      </div>
+
+      <div class="modal-footer border-secondary">
+        <button class="btn btn-outline-primary" id="project_yes" data-bs-dismiss="modal"
+          onclick="modal_add_projects()">#Yes</button>
+        <button class="btn btn-outline-secondary" id="project_no" data-bs-dismiss="modal">Відміна</button>
+      </div>
+    </div>
+  </div>
+</div>

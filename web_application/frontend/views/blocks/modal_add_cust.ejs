@@ -1,0 +1,33 @@
+<div class="modal fade" id="modal_customers" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+
+      <div class="modal-header border-secondary">
+        <div class="d-flex flex-column">
+          <span class="fs-3 lh-1" id="customer_title">#Title</span>
+        </div>
+        <button type="button" class="btn-close bg-primary" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+
+          <span class="fs-5">Ім'я замовника</span>
+          <input class="form-control fs-5 bg-dark text-light border-primary mb-2" id="customer_name" type="text"
+            placeholder="Ім'я">
+
+          <span class="fs-5">Вік замовника</span>
+          <input class="form-control fs-5 bg-dark text-light border-primary" id="customer_age" type="text"
+            placeholder="Вік">
+        </form>
+      </div>
+
+      <div class="modal-footer border-secondary">
+        <button class="btn btn-outline-primary" data-bs-dismiss="modal" onclick="modal_add_customers()"
+          id="customer_yes">#Yes</button>
+        <button class="btn btn-outline-secondary" data-bs-dismiss="modal" id="customer_no">Відміна</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "Lab 1",
   "main": "main.js",
+  "config": {
+    "port_frontend": "8080",
+    "port_backend": "3000"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "frontend": "node web_application/frontend/main.js use_db=false -e js,ejs"
   },
   "repository": {
     "type": "git",
@@ -17,12 +21,14 @@
     "bootstrap": "^5.0.0-beta3",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "jquery": "^3.6.0"
   },
   "bugs": {
     "url": "https://github.com/AndriiMorozPM/lab1/issues"
   },
   "homepage": "https://github.com/AndriiMorozPM/lab1#readme",
   "dependencies": {
+    "jquery": "^3.6.0"
   }
 }
