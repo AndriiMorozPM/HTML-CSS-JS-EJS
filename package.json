@@ -8,7 +8,9 @@
     "port_backend": "3000"
   },
   "scripts": {
-    "frontend": "node web_application/frontend/main.js use_db=false -e js,ejs"
+    "frontend": "nodemon web_application/frontend/main.js use_db=false -e js,ejs",
+    "frontend_db": "nodemon web_application/frontend/main.js use_db=true -e js,ejs",
+    "backend": "nodemon web_application/backend/main.js -e js"
   },
   "repository": {
     "type": "git",
@@ -17,18 +19,18 @@
   "author": "Andrii Moroz",
   "license": "MIT",
   "devDependencies": {
+    "bootstrap5": "^1.1.9",
+    "cors": "^2.8.5",
     "custom_module": "file:custom_module",
-    "bootstrap": "^5.0.0-beta3",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "path": "^0.12.7",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "mongodb": "^3.6.6",
+    "nodemon": "^2.0.7"
   },
   "bugs": {
     "url": "https://github.com/AndriiMorozPM/lab1/issues"
   },
   "homepage": "https://github.com/AndriiMorozPM/lab1#readme",
-  "dependencies": {
-    "jquery": "^3.6.0"
-  }
+  "dependencies": {}
 }

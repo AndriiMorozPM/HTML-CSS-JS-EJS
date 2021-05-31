@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <meta charset="UTF-8">
+   <title><%= title %></title>
+   <meta name="description" content="Програмування веб-додатків">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/node_modules/bootstrap5/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-dark text-light mx-3 my-2">
+
+   <div class="fs-3 text-primary">Ви підключилися до локального сервера</div>
+   <div class="fs-5">http://localhost:<%- port %></div>
+   <hr>
+   <div class="fs-3 text-primary mb-2">Список доступних запитів</div>
+
+   <%- include('../blocks/table.ejs'); %>
+
+</body>
+</html>
